@@ -35,11 +35,22 @@ var employees = [{
 //  1. If employee's first name is Theo, remove that employee because he just got fired.
 //  2. If the employee's first name is Lorie, change her department to 'HR'.
 //  3. Return the updated employee array.
+  
+  function employeeUpdater (arr) {
+  
+    for( let i = 0; i < arr.length; i++ ) {
+         if (arr[i].firstName === 'Theo') {
+           arr.splice(i, 1)
+           i--
+         }
+         if (arr[i].firstName === 'Lorie') {
+           arr[i].department = 'HR'
+         }
+    }
+    return arr;
+}
 
-// Code here
-
-
-
+employeeUpdater(employees)
 
 
 
@@ -54,7 +65,9 @@ var employees = [{
 
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
-// Code here
+function removeDuplicates() {
+  
+}
 
 
 
